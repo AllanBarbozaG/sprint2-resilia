@@ -11,6 +11,10 @@ class DatabaseMethods {
     return Database.RandomTips[random]
   }
 
+  static createTip(tip) {
+    return Database.RandomTips = [...Database.RandomTips, tip]
+  }
+
 
 
 }
