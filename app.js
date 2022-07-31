@@ -1,5 +1,7 @@
 import express from "express";
 import * as dotenv from "dotenv";
+import Tips from "./src/controllers/Tips.js"
+
 
 dotenv.config();
 
@@ -12,4 +14,8 @@ app.listen(port, () => {
 })
 
 app.use(express.json())
+
+Tips.routes(app)
+
+
 
